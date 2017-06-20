@@ -1,0 +1,11 @@
+language: cpp
+sudo: required
+dist: xenial
+
+os: linux
+
+before_install:
+  - ./tests/travis-setup.sh
+
+script:
+ - qmake && make qmake_all && make
