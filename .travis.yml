@@ -9,4 +9,3 @@ before_install:
 
 script:
   - ./tests/travis-build.sh
-  - ./tests/travis-tests.sh
