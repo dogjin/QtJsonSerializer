@@ -4,9 +4,4 @@ set -e
 sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
 sudo add-apt-repository --yes ppa:beineri/opt-qt59-trusty
 sudo apt-get -qq update
-sudo apt-get -qq install g++-7 #qt59base
-
-g++ --version
-g++-7 --version
-
-esdfjisdfjdsiojfdeisojfdf #cause fail
+sudo apt-get -qq install g++-7 qt59base
