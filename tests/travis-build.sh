@@ -10,7 +10,8 @@ make -j$(nproc) all
 
 export LD_LIBRARY_PATH="$(pwd)/lib:$LD_LIBRARY_PATH"
 
+set -x
 cd tests/auto
 for test in $(find . -type f -executable -name "tst_*"); do
-	$test
+	QT_QPA_PLATFORM=minimal $test
 done
