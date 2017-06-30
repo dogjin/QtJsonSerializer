@@ -2,14 +2,7 @@ os: linux
 
 dist: trusty
 sudo: required
-language: android #use android as base, to have sdk etc installed
-
-android:
-  components:
-    - build-tools-26.0.0
-    - android-26
-    - extra
-    - ndk-bundle
+language: cpp
 
 before_install:
   - "./tests/travis/linux/setup.sh"
