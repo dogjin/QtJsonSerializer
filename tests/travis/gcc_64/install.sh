@@ -9,8 +9,7 @@ inst=$(pwd)/inst
 
 make INSTALL_ROOT=$inst install
 
-cd inst/opt/
-mv qt59 gcc_64
+cd inst/opt/qt/5.9.1
 tar cJf gcc_64.tar.xz gcc_64
 
 cd gcc_64
