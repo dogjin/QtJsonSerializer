@@ -4,8 +4,15 @@ language: cpp
 sudo: required
 dist: trusty
 
+branches:
+    only:
+    - travis-test
+
 before_install:
-  - ./tests/travis/setup.sh
+- ./tests/travis/setup.sh
 
 script:
-  - ./tests/travis/build.sh
+- ./tests/travis/build.sh
+
+after_success:
+- ./tests/travis/install.sh
