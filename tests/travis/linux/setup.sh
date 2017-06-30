@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+# android stuff
 curl -Lo /tmp/android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
 mkdir /tmp/android-sdk
 unzip -qq /tmp/android-sdk.zip -d /tmp/android-sdk/
@@ -9,7 +10,7 @@ unzip -qq /tmp/android-sdk.zip -d /tmp/android-sdk/
 sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test 
 sudo apt-get -qq update
 
-sudo apt-get -qq install --no-install-recommends libgl1-mesa-dev libglib2.0-0 libpulse-dev g++ make git ca-certificates curl xauth libx11-xcb1 libfontconfig1 libdbus-1-3 g++-7 python3 doxygen
+sudo apt-get -qq install --no-install-recommends libgl1-mesa-dev libglib2.0-0 libpulse-dev make git ca-certificates curl xauth libx11-xcb1 libfontconfig1 libdbus-1-3 g++-7 python3 doxygen
 
 curl -Lo /tmp/qpm https://www.qpm.io/download/v0.10.0/linux_386/qpm
 sudo install -m 755 /tmp/qpm /usr/local/bin/
