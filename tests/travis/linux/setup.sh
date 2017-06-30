@@ -8,8 +8,6 @@ unzip -qq /tmp/android-sdk.zip -d android/sdk/
 ./android/sdk/tools/bin/sdkmanager --update
 echo y | ./android/sdk/tools/bin/sdkmanager "platform-tools" "platforms;android-26" "build-tools;26.0.0" "extras;google;m2repository" "extras;android;support" "ndk-bundle" 
 ./android/sdk/tools/bin/sdkmanager --list
-
-sudo mv /tmp/android-sdk /opt/android-sdk
 export ANDROID_HOME=$HOME/android/sdk
 export ANDROID_NDK_HOME=$HOME/android/sdk/ndk-bundle
  
