@@ -2,10 +2,8 @@
 set -e
 
 # android stuff
-curl -Lo /tmp/android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
-mkdir /tmp/android-sdk
-unzip -qq /tmp/android-sdk.zip -d /tmp/android-sdk/
-/tmp/android-sdk/tools/bin/sdkmanager --list
+sdkmanager --update
+sdkmanager --list
 
 sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test 
 sudo apt-get -qq update
@@ -17,4 +15,4 @@ sudo install -m 755 /tmp/qpm /usr/local/bin/
 
 curl -Lo /tmp/installer.run https://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
 chmod +x /tmp/installer.run
-QT_QPA_PLATFORM=minimal sudo /tmp/installer.run --script tests/travis/gcc_64/qt-installer-script.qs --addRepository https://install.skycoder42.de/qtmodules/linux_x64
+QT_QPA_PLATFORM=minimal sudo /tmp/installer.run --script tests/travis/linux/qt-installer-script.qs --addRepository https://install.skycoder42.de/qtmodules/linux_x64
