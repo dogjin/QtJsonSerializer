@@ -9,7 +9,6 @@ cd build
 
 qmake -r ../qtjsonserializer.pro
 make -j$(nproc) all
-make doxygen
 
 export LD_LIBRARY_PATH="$(pwd)/lib:$LD_LIBRARY_PATH"
 
