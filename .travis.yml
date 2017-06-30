@@ -1,11 +1,11 @@
+os: linux
+
 language: cpp
 sudo: required
 dist: trusty
 
-os: linux
-
 before_install:
-  - ./tests/travis-setup.sh
+  - ./tests/travis/setup.sh
 
 script:
-  - ./tests/travis-build.sh
+  - ./tests/travis/build.sh

@@ -1,12 +1,15 @@
 #!/bin/bash
-source /opt/qt*/bin/qt*-env.sh
+source /opt/qt59/bin/qt59-env.sh
 set -e
 
-echo QMAKE_CXX = g++-7 >> .qmake.conf
+which qmake
 
-/opt/qt*/bin/qmake
-make qmake_all
+mkdir build
+cd build
+
+qmake -r ../qtjsonserializer.pro
 make -j$(nproc) all
+make doxygen
 
 export LD_LIBRARY_PATH="$(pwd)/lib:$LD_LIBRARY_PATH"
 
