@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 apt-get update
 apt-get -qq install --no-install-recommends libgl1-mesa-dev libglib2.0-0 libpulse-dev g++ make git ca-certificates curl xauth libx11-xcb1 libfontconfig1 libdbus-1-3 python3 patchelf doxygen
