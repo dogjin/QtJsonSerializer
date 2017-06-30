@@ -5,7 +5,7 @@ set -e
 curl -Lo /tmp/android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
 mkdir android
 unzip -qq /tmp/android-sdk.zip -d android/sdk/
-./android/sdk/tools/bin/sdkmanager --update
+echo y | ./android/sdk/tools/bin/sdkmanager --update
 echo y | ./android/sdk/tools/bin/sdkmanager "platform-tools" "platforms;android-26" "build-tools;26.0.0" "extras;google;m2repository" "extras;android;support" "ndk-bundle" 
 ./android/sdk/tools/bin/sdkmanager --list
 export ANDROID_HOME=$HOME/android/sdk
