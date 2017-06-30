@@ -23,3 +23,7 @@ deploy:
     repo: Skycoder42/QJsonSerializer
     branch: travis-test
     tags: true
+
+#cache:
+#  directories:
+#  - /opt/qt
