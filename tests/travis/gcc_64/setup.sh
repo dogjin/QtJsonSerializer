@@ -3,10 +3,8 @@ set -e
 
 curl -Lo /tmp/android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
 mkdir /tmp/android-sdk
-unzip /tmp/android-sdk.zip -d /tmp/android-sdk/
-/tmp/android-sdk/bin/sdkmanager --list
-
-exit 1
+unzip -qq /tmp/android-sdk.zip -d /tmp/android-sdk/
+/tmp/android-sdk/tools/bin/sdkmanager --list
 
 sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test 
 sudo apt-get -qq update
