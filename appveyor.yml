@@ -1,5 +1,5 @@
 image:
-#  - Visual Studio 2017
+  - Visual Studio 2017
   - Visual Studio 2015
 
 version: 2.2.1-{build}
@@ -9,9 +9,6 @@ install:
 
 build_script:
   - .\tests\travis\win\build.bat
-
-#after_build:
-#  - .\tests\travis\win\upload-prepare.bat
 
 artifacts:
   - path: install
