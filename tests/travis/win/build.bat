@@ -2,10 +2,10 @@
 
 :: call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
 
-set QTDIR=C:\Qt\5.9\msvc2017_64
-set PATH=%PATH%;%QTDIR%\bin;C:\MinGW\bin;
+QTDIR=C:\Qt\5.9\msvc2017_64
+PATH=%PATH%;%QTDIR%\bin;C:\MinGW\bin;
 
 :: .\tests\travis\win\build-msvc2015.bat
-:: .\tests\travis\win\build-msvc2017.bat
-:: .\tests\travis\win\build-winrt_x64-msvc2017.bat
+.\tests\travis\win\build-msvc2017.bat
+.\tests\travis\win\build-winrt_x64-msvc2017.bat
 .\tests\travis\win\build-winrt_x86-msvc2017.bat
