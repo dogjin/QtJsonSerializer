@@ -6,7 +6,7 @@ set QTDIR=C:\Qt\5.9\msvc2017_64
 set PATH=%PATH%;%QTDIR%\bin;C:\MinGW\bin;
 
 :: .\tests\travis\win\build-msvc2015.bat
-:: call .\tests\travis\win\build-msvc2017.bat
-:: call .\tests\travis\win\build-winrt_x64-msvc2017.bat
-:: call .\tests\travis\win\build-winrt_x86-msvc2017.bat
+call .\tests\travis\win\build-msvc2017.bat
+call .\tests\travis\win\build-winrt_x64-msvc2017.bat
+call .\tests\travis\win\build-winrt_x86-msvc2017.bat
 call .\tests\travis\win\build-winrt_armv7-msvc2017.bat
