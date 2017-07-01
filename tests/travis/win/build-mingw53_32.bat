@@ -1,5 +1,5 @@
 setlocal
-call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64
+set PATH=%PATH%;C:\MinGW\bin;
 
 mkdir build-mingw53_32
 cd build-mingw53_32
