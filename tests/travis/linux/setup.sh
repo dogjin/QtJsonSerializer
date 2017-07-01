@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-travis_wait echo test
-
 # install build deps
 sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test 
 sudo apt-get -qq update

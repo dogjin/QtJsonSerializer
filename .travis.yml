@@ -10,7 +10,7 @@ matrix:
       sudo: required
 
 before_install:
-  - ./tests/travis/$TRAVIS_OS_NAME/setup.sh
+  - travis_wait 30 ./tests/travis/$TRAVIS_OS_NAME/setup.sh
 
 script:
   - ./tests/travis/$TRAVIS_OS_NAME/build.sh
