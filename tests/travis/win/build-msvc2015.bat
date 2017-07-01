@@ -1,3 +1,6 @@
+setlocal
+call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64
+
 mkdir build-msvc2015
 cd build-msvc2015
 
@@ -8,7 +11,7 @@ set PATH=%PATH%;%CD%\lib;
 cd tests\auto
 set QT_QPA_PLATFORM=minimal
 for /r %%f in (tst_*.exe) do (
-	%%f
+	%%f || exit /B 1
 )
 
 cd ..\..
