@@ -7,4 +7,5 @@ set PATH=%PATH%;%QTDIR%\bin;C:\MinGW\bin;
 
 :: .\tests\travis\win\build-msvc2015.bat
 :: .\tests\travis\win\build-msvc2017.bat
-.\tests\travis\win\build-winrt_x64-msvc2017.bat
+:: .\tests\travis\win\build-winrt_x64-msvc2017.bat
+.\tests\travis\win\build-winrt_x86-msvc2017.bat
