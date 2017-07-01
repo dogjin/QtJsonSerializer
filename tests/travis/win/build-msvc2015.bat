@@ -11,7 +11,8 @@ set PATH=%PATH%;%CD%\lib;
 cd tests\auto
 set QT_QPA_PLATFORM=minimal
 for /r %%f in (tst_*.exe) do (
-	%%f || exit /B 1
+	echo running test %%f
+	%%f || exit /B %errorLevel%
 )
 
 cd ..\..
