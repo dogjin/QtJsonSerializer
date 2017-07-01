@@ -9,4 +9,4 @@ set -e
 curl -Lo /tmp/installer.dmg https://download.qt.io/official_releases/online_installers/qt-unified-mac-x64-online.dmg
 hdiutil attach /tmp/installer.dmg
 find /Volumes/qt-unified-mac-x64-3.0.0-online
-QT_QPA_PLATFORM=minimal sudo /Volumes/qt-unified-mac-*/qt-unified-mac-*/Contents/MacOS/qt-unified-mac-* --script tests/travis/osx/qt-installer-script.qs --addRepository https://install.skycoder42.de/qtmodules/mac_x64/
+QT_QPA_PLATFORM=minimal sudo travis_wait /Volumes/qt-unified-mac-*/qt-unified-mac-*/Contents/MacOS/qt-unified-mac-* --script tests/travis/osx/qt-installer-script.qs --addRepository https://install.skycoder42.de/qtmodules/mac_x64/
