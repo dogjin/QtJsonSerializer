@@ -13,7 +13,7 @@ set QT_QPA_PLATFORM=minimal
 for /r %%f in (tst_*.exe) do (
 	echo running test %%f
 	%%f
-	echo %errorLevel%
+	echo %errorlevel%
 	%%f || exit /B 1
 )
 
