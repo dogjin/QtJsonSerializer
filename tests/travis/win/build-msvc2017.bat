@@ -6,9 +6,9 @@ cd build-msvc2017
 C:\Qt\5.9\msvc2017_64\bin\qmake -r ..\qtjsonserializer.pro
 nmake all
 
-PATH=%PATH%;%CD%\lib;
+SETLOCAL PATH=%PATH%;%CD%\lib;
 cd tests\auto
-QT_QPA_PLATFORM=minimal
+SETLOCAL QT_QPA_PLATFORM=minimal
 for /r %%f in (tst_*.exe) do (
 	%%f || exit /B 1
 )
