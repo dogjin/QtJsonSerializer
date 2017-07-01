@@ -1,13 +1,11 @@
 #!/bin/bash
 set -e
 
-mkdir build-gcc
-cd build-gcc
+mkdir build-clang
+cd build-clang
 
-/opt/qt/5.9.1/gcc_64/bin/qmake -r "QMAKE_CXX=g++-7" ../qtjsonserializer.pro
+/opt/qt/5.9.1/clang_64/bin/qmake -r ../qtjsonserializer.pro
 make all
-make doxygen
-cat /home/travis/build/Skycoder42/QJsonSerializer/build-gcc/doc/qtjsonserializer.qch
 
 export LD_LIBRARY_PATH="$(pwd)/lib:$LD_LIBRARY_PATH"
 
