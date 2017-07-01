@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-# TODO install qpm
+# install qpm
 curl -Lo /tmp/qpm https://www.qpm.io/download/v0.10.0/darwin_386/qpm
 sudo install -m 755 /tmp/qpm /usr/local/bin/
 
