@@ -7,11 +7,7 @@ nmake all
 cd tests\auto
 set QT_QPA_PLATFORM=minimal
 for /r %%f in (tst_*.exe) do (
-	@echo test found %%f
-	echo.%%f | findstr /C:"debug" 1>nul
-	if errorlevel 0 (
-		@echo debug test found %%f
-	)
+	start %%f
 )
 
 cd ..\..
