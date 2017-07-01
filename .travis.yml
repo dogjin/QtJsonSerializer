@@ -16,7 +16,7 @@ script:
   - ./tests/travis/$TRAVIS_OS_NAME/build.sh
 
 after_success:
-  - find ./install/opt/qt #TODO debug
+  - find . -name "*.qch" #TODO debug
 
 before_deploy:
   - ./tests/travis/$TRAVIS_OS_NAME/upload-prepare.sh
