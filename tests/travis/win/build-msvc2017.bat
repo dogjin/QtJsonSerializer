@@ -10,3 +10,4 @@ for /r %%f in (tst_*.exe) do @echo TESTTTTT %%f
 
 cd ..\..
 nmake INSTALL_ROOT="\tmp\install" install
+
