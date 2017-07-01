@@ -6,7 +6,9 @@ nmake all
 
 cd tests\auto
 set QT_QPA_PLATFORM=minimal
-dir tst_*.exe /b/s
+dir *\debug\tst_*.exe /b/s
 
 cd ..\..
-nmake INSTALL_ROOT="$\tmp\install" install
+nmake INSTALL_ROOT="\tmp\install" install
+
+jom -v
