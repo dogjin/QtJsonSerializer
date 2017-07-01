@@ -6,8 +6,12 @@ nmake all
 
 cd tests\auto
 set QT_QPA_PLATFORM=minimal
-for /r %%f in (tst_*.exe) do @echo TESTTTTT %%f
+for /r %%f in (tst_*.exe) do (
+	echo.%%f | findstr /C:"debug" 1>nul
+	if errorlevel 0 (
+		%%f
+	)
+)
 
 cd ..\..
 nmake INSTALL_ROOT="\tmp\install" install
-
