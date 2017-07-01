@@ -12,7 +12,9 @@ cd tests\auto
 set QT_QPA_PLATFORM=minimal
 for /r %%f in (tst_*.exe) do (
 	echo running test %%f
-	%%f || exit /B %errorLevel%
+	%%f
+	echo %errorLevel%
+	%%f || exit /B 1
 )
 
 cd ..\..
