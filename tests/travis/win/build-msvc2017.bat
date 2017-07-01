@@ -15,4 +15,4 @@ for /r %%f in (tst_*.exe) do (
 )
 
 cd ..\..
-nmake INSTALL_ROOT="\tmp\install" install
+nmake INSTALL_ROOT="\projects\qjsonserializer\install" install
