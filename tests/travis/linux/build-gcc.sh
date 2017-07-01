@@ -4,7 +4,7 @@ set -e
 mkdir build-gcc
 cd build-gcc
 
-/opt/qt/5.9.1/gcc_64/bin/qmake -r "QMAKE_CXX=g++-7" ../qtjsonserializer.pro
+/opt/qt/5.9.1/gcc_64/bin/qmake -r "QMAKE_CXX=g++-5" ../qtjsonserializer.pro
 make all
 make doxygen
 
@@ -17,3 +17,5 @@ done
 
 cd ../..
 make INSTALL_ROOT="$(pwd)/../install" install
+file /home/travis/build/Skycoder42/QJsonSerializer/build-gcc/doc/qtjsonserializer.qch
+file /home/travis/build/Skycoder42/QJsonSerializer/build-gcc/../install/opt/qt/Docs/Qt-5.9.1/qtjsonserializer.qch
