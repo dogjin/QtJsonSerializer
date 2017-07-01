@@ -1,6 +1,6 @@
 image:
   - Visual Studio 2015
-#  - Visual Studio 2017
+  - Visual Studio 2017
 
 version: 2.2.1-{build}
 
@@ -10,6 +10,10 @@ install:
 build_script:
   - .\tests\travis\win\build.bat
 
-#artifacts:
-#  - path: gopath\bin\qpm.exe
-#    name: qpm
+#after_build:
+#  - .\tests\travis\win\upload-prepare.bat
+
+artifacts:
+  - path: C:\tmp\Qt
+    name: build_win_5.9.0
+    type: zip
