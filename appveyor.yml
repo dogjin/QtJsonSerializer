@@ -1,18 +1,9 @@
-image: Visual Studio 2017
+image: 
+  matix:
+    - Visual Studio 2017
+    - Visual Studio 2015
 
 version: 2.2.1-{build}
-
-environment:
-  matrix:
-  - name: qt_17
-    platform: amd64_x86
-    qt: msvc2017
-  - name: qt_15
-    platform: amd64_x86
-    qt: msvc2015
-  - name: qt_mingw
-    platform: amd64_x86
-    qt: mingw
 
 install:
   - dir C:\Qt\5.9
