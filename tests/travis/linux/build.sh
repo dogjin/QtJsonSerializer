@@ -15,6 +15,3 @@ export ANDROID_NDK_ROOT=$ANDROID_NDK
 cd build-gcc/doc
 make doxygen
 make INSTALL_ROOT="$(pwd)/../../install" install
-
-file /home/travis/build/Skycoder42/QJsonSerializer/build-gcc/doc/qtjsonserializer.qch
-file /home/travis/build/Skycoder42/QJsonSerializer/install/opt/qt/Docs/Qt-5.9.1/qtjsonserializer.qch
