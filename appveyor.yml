@@ -14,6 +14,6 @@ build_script:
 #  - .\tests\travis\win\upload-prepare.bat
 
 artifacts:
-  - path: C:\tmp\Qt
+  - path: ..\..\tmp\Qt
     name: build_win_5.9.0
     type: zip
