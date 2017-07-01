@@ -2,7 +2,14 @@ image: Visual Studio 2017
 
 version: 2.2.1-{build}
 
+qt:
+  - msvc2017
+  - msvc2015
+  - mingw
+
 install:
+  - dir C:\Qt\5.9
+  - exit 1
   - .\tests\travis\win\setup.bat
 
 build_script:
