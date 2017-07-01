@@ -8,7 +8,7 @@ unzip -qq /tmp/android-sdk.zip -d android/sdk/
 echo y | ./android/sdk/tools/bin/sdkmanager --update
 echo y | ./android/sdk/tools/bin/sdkmanager "platform-tools" "platforms;android-26" "build-tools;26.0.0" "extras;google;m2repository" "extras;android;m2repository" "ndk-bundle"
 
-find ./android/sdk/
+find ./android/sdk/ndk-bundle -type d
 sdadasdfdfu
 
 # install build deps
