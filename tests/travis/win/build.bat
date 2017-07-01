@@ -8,7 +8,7 @@ if "%APPVEYOR_BUILD_WORKER_IMAGE%" == "Visual Studio 2017" (
 )
 
 if "%APPVEYOR_BUILD_WORKER_IMAGE%" == "Visual Studio 2015" (	
-	.\tests\travis\win\build-msvc2015.bat
-	.\tests\travis\win\build-msvc2015_x86.bat
-	.\tests\travis\win\build-mingw53_32.bat
+	call .\tests\travis\win\build-msvc2015.bat
+	call .\tests\travis\win\build-msvc2015_x86.bat
+	call .\tests\travis\win\build-mingw53_32.bat
 )
