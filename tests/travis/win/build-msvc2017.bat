@@ -6,9 +6,7 @@ nmake all
 
 cd tests\auto
 set QT_QPA_PLATFORM=minimal
-dir *\debug\tst_*.exe /b/s
+for /f %%f in ('dir *\debug\tst_*.exe /b/s') do	echo %%f
 
 cd ..\..
 nmake INSTALL_ROOT="\tmp\install" install
-
-jom -v
