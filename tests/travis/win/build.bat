@@ -1,6 +1,6 @@
 :: builds
 
-set MAKEFLAGS="-j%NUMBER_OF_PROCESSORS%"
+set MAKEFLAGS=-j%NUMBER_OF_PROCESSORS%
 
 if "%APPVEYOR_BUILD_WORKER_IMAGE%" == "Visual Studio 2017" (	
 	call .\tests\travis\win\build-msvc2017.bat
