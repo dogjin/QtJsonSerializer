@@ -4,6 +4,8 @@ set -e
 echo ANDROID_NDK_ROOT $ANDROID_NDK_ROOT
 echo ANDROID_SDK_ROOT $ANDROID_SDK_ROOT
 
+$ANDROID_NDK_ROOT/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++ -v
+
 mkdir build-android-armv7
 cd build-android-armv7
 
