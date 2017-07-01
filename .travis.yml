@@ -5,6 +5,7 @@ sudo: required
 language: cpp
 
 before_install:
+  - uname -a
   - "./tests/travis/linux/setup.sh"
 
 script:
