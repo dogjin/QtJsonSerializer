@@ -6,4 +6,4 @@ cd build-msvc2015_x86
 
 C:\Qt\5.9\msvc2015\bin\qmake -r ..\qtjsonserializer.pro
 nmake
-nmake INSTALL_ROOT="\projects\qjsonserializer\install" install
+nmake INSTALL_ROOT=\projects\qjsonserializer\install install

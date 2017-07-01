@@ -6,4 +6,4 @@ cd build-winrt_armv7-msvc2017
 
 C:\Qt\5.9\winrt_armv7_msvc2017\bin\qmake -r ..\qtjsonserializer.pro
 nmake
-nmake INSTALL_ROOT="\projects\qjsonserializer\install" install
+nmake INSTALL_ROOT=\projects\qjsonserializer\install install
