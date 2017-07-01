@@ -1,5 +1,5 @@
 setlocal
-call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" armv7
+call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm
 
 mkdir build-winrt_armv7-msvc2017
 cd build-winrt_armv7-msvc2017

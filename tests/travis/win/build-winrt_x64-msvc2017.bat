@@ -1,5 +1,5 @@
 setlocal
-call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
+call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64
 
 mkdir build-winrt_x64-msvc2017
 cd build-winrt_x64-msvc2017
