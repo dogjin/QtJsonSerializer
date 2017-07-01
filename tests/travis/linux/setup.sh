@@ -22,6 +22,3 @@ mkdir android
 unzip -qq /tmp/android-sdk.zip -d android/sdk/
 echo y | ./android/sdk/tools/bin/sdkmanager --update --verbose
 echo y | ./android/sdk/tools/bin/sdkmanager "platform-tools" "platforms;android-26" "build-tools;26.0.0" "extras;google;m2repository" "extras;android;m2repository" "ndk-bundle" --verbose
-
-export ANDROID_HOME=$HOME/android/sdk
-export ANDROID_NDK_HOME=$HOME/android/sdk/ndk-bundle
