@@ -1,10 +1,11 @@
 setlocal
 call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64
+set PATH=C:\Qt\5.9\msvc2017_64\bin;%CD%\lib;%PATH%;
 
 mkdir build-msvc2017
 cd build-msvc2017
 
-C:\Qt\5.9\msvc2017_64\bin\qmake -r ..\qtjsonserializer.pro
+qmake -r ..\qtjsonserializer.pro
 nmake all
 
 set PATH=%PATH%;%CD%\lib;
