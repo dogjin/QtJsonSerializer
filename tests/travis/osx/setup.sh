@@ -2,8 +2,10 @@
 set -e
 
 # TODO install qpm
-#curl -Lo /tmp/qpm https://www.qpm.io/download/v0.10.0/linux_386/qpm
-#sudo install -m 755 /tmp/qpm /usr/local/bin/
+curl -Lo /tmp/qpm https://www.qpm.io/download/v0.10.0/darwin_386/qpm
+sudo install -m 755 /tmp/qpm /usr/local/bin/
+
+travis_wait echo test
 
 # install Qt
 curl -Lo /tmp/installer.dmg https://download.qt.io/official_releases/online_installers/qt-unified-mac-x64-online.dmg
