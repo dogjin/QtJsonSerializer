@@ -6,7 +6,6 @@ cd build-gcc
 
 /opt/qt/5.9.1/gcc_64/bin/qmake -r "QMAKE_CXX=g++-5" ../qtjsonserializer.pro
 make all
-make doxygen
 
 export LD_LIBRARY_PATH="$(pwd)/lib:$LD_LIBRARY_PATH"
 
