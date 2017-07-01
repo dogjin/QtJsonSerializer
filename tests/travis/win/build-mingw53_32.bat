@@ -1,5 +1,5 @@
 setlocal
-set PATH=%PATH%;C:\Qt\Tools\mingw530_32\bin;C:\MinGW\bin;
+set PATH=C:\Qt\Tools\mingw530_32\bin;%PATH%;
 set MAKEFLAGS=-j%NUMBER_OF_PROCESSORS%
 
 dir C:\Qt\Tools
