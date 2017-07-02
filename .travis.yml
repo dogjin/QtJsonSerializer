@@ -22,7 +22,7 @@ script:
   - ./qtmodules-travis/ci/$TRAVIS_OS_NAME/build.sh
 
 after_success:
-  - find ./install/qt
+  - find ./install/qt 
 
 before_deploy:
   - ./qtmodules-travis/ci/$TRAVIS_OS_NAME/upload-prepare.sh
