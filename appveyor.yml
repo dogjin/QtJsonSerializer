@@ -5,8 +5,8 @@ image:
 version: 2.2.1-{build}
 
 environment:
-  - QT_VER=5.9
-  - PROJECT=qtjsonserializer
+  QT_VER: 5.9
+  PROJECT: qtjsonserializer
 
 install:
   - git clone https://github.com/Skycoder42/QtModules.git .\qtmodules-travis
