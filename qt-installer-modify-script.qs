@@ -28,9 +28,9 @@ Controller.prototype.IntroductionPageCallback = function() {
 Controller.prototype.ComponentSelectionPageCallback = function() {
 	var widget = gui.currentPageWidget();
 	widget.selectComponent("qt.591.win64_msvc2017_64");
-	widget.selectComponent("qt.591.win64_msvc2017_winrt_armv7");
-	widget.selectComponent("qt.591.win64_msvc2017_winrt_x64");
-	widget.selectComponent("qt.591.win64_msvc2017_winrt_x86");
+	//widget.selectComponent("qt.591.win64_msvc2017_winrt_armv7");
+	//widget.selectComponent("qt.591.win64_msvc2017_winrt_x64");
+	//widget.selectComponent("qt.591.win64_msvc2017_winrt_x86");
 
 	if(gui.isButtonEnabled(buttons.NextButton))
 		gui.clickButton(buttons.NextButton);
