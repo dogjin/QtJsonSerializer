@@ -21,9 +21,6 @@ before_install:
 script:
   - ./qtmodules-travis/ci/$TRAVIS_OS_NAME/build.sh
 
-after_success:
-  - ./qtmodules-travis/ci/$TRAVIS_OS_NAME/upload-prepare.sh
-
 before_deploy:
   - ./qtmodules-travis/ci/$TRAVIS_OS_NAME/upload-prepare.sh
 deploy:
