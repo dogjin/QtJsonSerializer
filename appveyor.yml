@@ -9,7 +9,8 @@ environment:
   PROJECT: qtjsonserializer
 
 install:
-  - git clone https://github.com/Skycoder42/QtModules.git .\qtmodules-travis 
+  - .\qtinit.bat
+  - git clone https://github.com/Skycoder42/QtModules.git .\qtmodules-travis
   - .\qtmodules-travis\ci\win\setup.bat
 
 build_script:
