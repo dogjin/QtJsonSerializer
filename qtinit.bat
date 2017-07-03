@@ -9,8 +9,8 @@ timeout /t 900
 
 dir C:\Qt
 dir C:\Qt\5.9.1
-type C:\Qt\InstallationLog.txt
 
+tasklist
 taskkill /im C:\Qt\MaintenanceTool.exe /f
 
 exit 1
