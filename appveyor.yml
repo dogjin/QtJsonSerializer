@@ -1,6 +1,6 @@
 image:
   - Visual Studio 2017
-#  - Visual Studio 2015
+  - Visual Studio 2015
 
 version: 2.2.1-{build}
 
@@ -24,3 +24,5 @@ artifacts:
     name: build_win_msvc2017_%QT_VER%.zip
   - path: install\Qt\%QT_VER%\build_win_msvc2015_%QT_VER%.zip
     name: build_win_msvc2015_%QT_VER%.zip
+  - path: install\Qt\%QT_VER%\build_win_mingw_%QT_VER%.zip
+    name: build_win_mingw_%QT_VER%.zip
