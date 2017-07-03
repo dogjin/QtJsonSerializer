@@ -9,7 +9,6 @@ matrix:
       osx_image: xcode8.3
       sudo: required
 
-
 env:
   global:
     - QT_VER=5.9.1
