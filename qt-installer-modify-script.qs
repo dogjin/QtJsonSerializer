@@ -2,9 +2,9 @@
 
 function Controller() {
     installer.autoRejectMessageBoxes();
-    installer.updateFinished.connect(function() {
-        gui.clickButton(buttons.NextButton);
-    })
+    installer.installationFinished.connect(function() {
+    	gui.clickButton(buttons.FinishButton);
+    });
 }
 
 // Skip the welcome page
@@ -27,7 +27,7 @@ Controller.prototype.IntroductionPageCallback = function() {
 // select the components to install
 Controller.prototype.ComponentSelectionPageCallback = function() {
 	var widget = gui.currentPageWidget();
-	widget.selectComponent("qt.591.win64_msvc2017_64");
+	widget.selectComponent("qt.59.skycoder42.jsonserializer");
 	//widget.selectComponent("qt.591.win64_msvc2017_winrt_armv7");
 	//widget.selectComponent("qt.591.win64_msvc2017_winrt_x64");
 	//widget.selectComponent("qt.591.win64_msvc2017_winrt_x86");
