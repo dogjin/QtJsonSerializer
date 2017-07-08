@@ -18,7 +18,7 @@ env:
     - PROJECT=qtjsonserializer
 
 before_install:
-  - git clone https://github.com/Skycoder42/QtModules.git ./qtmodules-travis 
+  - git clone https://github.com/Skycoder42/QtModules.git ./qtmodules-travis
   - travis_wait 30 ./qtmodules-travis/ci/$TRAVIS_OS_NAME/setup.sh
 
 script:
