@@ -8,8 +8,19 @@ environment:
   QT_VER: 5.9.1
   PROJECT: qtjsonserializer
 
+  matrix:
+    - PLATFORM: msvc2017_64
+    - PLATFORM: winrt_x64_msvc2017
+    - PLATFORM: winrt_x86_msvc2017
+    - PLATFORM: winrt_armv7_msvc2017
+    - PLATFORM: msvc2015_64
+    - PLATFORM: msvc2015
+    - PLATFORM: mingw53_32
+
 install:
-  - git clone https://github.com/Skycoder42/QtModules.git .\qtmodules-travis 
+  - git clone https://github.com/Skycoder42/QtModules.git .\qtmodules-travis
+  - dir C:\Qt\5.9
+  - dir C:\Qt\Tools
   - .\qtmodules-travis\ci\win\setup.bat
 
 build_script:
