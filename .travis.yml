@@ -5,7 +5,7 @@ services:
 
 sudo: required
 dist: trusty
-#osx_image: xcode8.3
+osx_image: xcode8.3
 
 env:
   global:
@@ -30,7 +30,7 @@ matrix:
 #        - PLATFORM=clang_64
 #    - os: osx
 #      env:
-#y        - PLATFORM=ios
+#        - PLATFORM=ios
 
 before_install:
   - git clone https://github.com/Skycoder42/QtModules.git ./qtmodules-travis --branch ci-x
