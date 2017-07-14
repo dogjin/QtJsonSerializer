@@ -31,7 +31,7 @@ matrix:
 #    - os: osx
 #      env:
 #        - PLATFORM=ios
-
+#
 before_install:
   - git clone https://github.com/Skycoder42/QtModules.git ./qtmodules-travis --branch ci-x
   - ./qtmodules-travis/ci/$TRAVIS_OS_NAME/setup.sh
