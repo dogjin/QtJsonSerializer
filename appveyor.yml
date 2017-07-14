@@ -35,6 +35,7 @@ matrix:
       image: Visual Studio 2017
 
 install:
+  - @echo on
   - git clone https://github.com/Skycoder42/QtModules.git .\qtmodules-travis --branch ci-x
   - dir C:\Qt\5.9
   - dir C:\Qt\Tools
