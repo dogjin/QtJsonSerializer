@@ -32,7 +32,7 @@ matrix:
     - PLATFORM: msvc2015
       image: Visual Studio 2017
     - PLATFORM: mingw53_32
-      image: Visual Studio 2017
+      image: Visual Studio 2015
 
 install:
   - git clone https://github.com/Skycoder42/QtModules.git .\qtmodules-travis --branch ci-x
