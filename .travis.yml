@@ -11,6 +11,7 @@ env:
   global:
     - QPMX_CACHE_DIR=$HOME/.qpmx-cache
     - QT_VER=5.9.4
+    - IS_LTS=true
 
 matrix:
   include:
